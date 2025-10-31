@@ -6,7 +6,7 @@
   <style>
     table { border-collapse: collapse; width: 100%; }
     th, td { border: 1px solid black; padding: 8px; text-align: center; }
-    audio { width: 200px; } /* 플레이어 크기 조정 */
+    audio { width: 200px; }
   </style>
 </head>
 <body>
@@ -22,15 +22,10 @@
     <tbody>
       <tr>
         <td>Sentence 1</td>
-        <td><audio controls><source src="ground_truth1.mp3" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="generated1.mp3" type="audio/mpeg"></audio></td>
+        <td><audio controls><source src="ground_truth1.mp3" type="audio/mpeg">Your browser does not support audio.</audio></td>
+        <td><audio controls><source src="generated1.mp3" type="audio/mpeg">Your browser does not support audio.</audio></td>
       </tr>
-      <tr>
-        <td>Sentence 2</td>
-        <td><audio controls><source src="ground_truth2.mp3" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="generated2.mp3" type="audio/mpeg"></audio></td>
-      </tr>
-      <!-- 더 많은 행 추가 가능 -->
+      <!-- 추가 행 -->
     </tbody>
   </table>
 </body>
