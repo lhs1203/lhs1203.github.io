@@ -2,13 +2,36 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>오디오 재생 페이지</title>
+  <title>오디오 테이블 페이지</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    audio { width: 200px; } /* 플레이어 크기 조정 */
+  </style>
 </head>
 <body>
-  <h1>GitHub Pages 오디오 플레이어</h1>
-  <audio controls>
-    <source src="sound.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <h1>오디오 샘플 비교 테이블</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Sentence</th>
+        <th>Ground Truth</th>
+        <th>Generated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sentence 1</td>
+        <td><audio controls><source src="ground_truth1.mp3" type="audio/mpeg"></audio></td>
+        <td><audio controls><source src="generated1.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>Sentence 2</td>
+        <td><audio controls><source src="ground_truth2.mp3" type="audio/mpeg"></audio></td>
+        <td><audio controls><source src="generated2.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <!-- 더 많은 행 추가 가능 -->
+    </tbody>
+  </table>
 </body>
 </html>
